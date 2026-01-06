@@ -1,3 +1,4 @@
-a = 10
-b = 5
-print("Sum =", a + b)
+def add(a, b):
+    return a + b
+
+print("Sum =", add(10, 5))
