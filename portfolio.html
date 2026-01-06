@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Portfolio</title>
+
+  <style>
+      body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: lavender;
+      color: pink;
+    }
+    header {
+      background: linear-gradient(90deg, black);
+      color:gold;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+    header p {
+      color: white;
+      font-size:20px;
+    }
+
+      nav {
+      background: gold;
+      display: flex;
+      text-align: center;
+      padding: 10px;
+justify-content: center;
+    }
+    nav a {
+      color: blue;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background:black;
+      color:black;
+    }
+
+        section {
+      padding: 60px 80px;
+      text-align: center;
+    }
+    h2 {
+      color: gold;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    p {
+      color:Black;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    /* ---------- PROJECTS SECTION ---------- */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .project-card {
+      background: #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+      background-color: #333;
+    }
+
+    /* ---------- ACHIEVEMENTS ---------- */
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: left;
+      display: inline-block;
+    }
+    ul li {
+      background: #1e1e1e;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    /* ---------- GALLERY ---------- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* ---------- CONTACT ---------- */
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #222;
+      color: #fff;
+    }
+    button {
+      padding: 10px;
+      background: #f9c74f;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #fff;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      section {
+        padding: 40px 20px;
+      }
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Afifa Shaikh</h1>
+    <p>B.Tech CSE (AI/ML) | Web Developer | Tech Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#gallery">Photos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Afifa Shaikh, a Computer Science student specializing in AI and Machine Learning. I enjoy building creative web applications and exploring the intersection between data and design. I’m interested in programming, AI, and data-driven technologies. This portfolio includes my projects, achievements, and skills that represent my learning journey and growing passion for technology.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+       A personal portfolio site designed using HTML, CSS, and JavaScript.
+</div>
+      <div class="project-card">
+        <h3>Basic Website:</h3>
+ Prediction of Study Hours Of a Student
+              </div>
+          </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>🏆Completed Digital Application Fundamentals (STEM) Course</li>
+      <li>💻 Completed C Programming Course</li>
+      <li>🌐 Developed basic porfolio</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+
+    <div class="gallery">
+      <img src="C:\Users\AFIFA SHAIKH\Documents\portfolio\images\Screenshot 2025-11-06 200438.png">
+      <img src="C:\Users\AFIFA SHAIKH\Documents\portfolio\images\FY_Div.C_29_Afifa Shaikh_NASSCOM EDA.png">
+      <img src="C:\Users\AFIFA SHAIKH\Documents\portfolio\images\Screenshot 2025-10-15 001903.png">
+      <img src="C:\Users\AFIFA SHAIKH\Documents\portfolio\images\Screenshot 2025-11-06 200438.png">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Afifa Shaikh | ALL RIGHTS RESERVED
+  </footer>
+</body>
+</html>
